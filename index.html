@@ -18,7 +18,7 @@
 <body >
     <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="#">
-      <img src="shubham.png" alt="Shubham's Logo" style="width:80px";> Welcome to Shubham's
+      <img src="Shubham.png" alt="Shubham's Logo" style="width:80px";> Welcome to Shubham's
         <ul class="navbar-nav ">
           <a class="nav-link" href="#">
             Time <button id="time" class="btn btn-light"></button>
