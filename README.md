@@ -1,1 +1,239 @@
-# WebSite
+<!DOCTYPE html>
+    <html lang="en" dir="ltr">
+    <head>
+    <meta charset="utf-8">
+    <title>Shubham WebSite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="index.js">
+    <script src="https://kit.fontawesome.com/1b5de41ca9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="favicon.ico">
+    </head>
+
+<body >
+    <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">
+      <img src="shubham.png" alt="Shubham's Logo" style="width:80px";> Welcome to Shubham's
+        <ul class="navbar-nav ">
+          <a class="nav-link" href="#">
+            Time <button id="time" class="btn btn-light"></button>
+        </a>
+      </ul>
+    </a>
+</nav>
+
+
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 1000);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+</script>
+
+<body onload="startTime()">
+
+
+
+<div class="back" background="back5.jpg">
+  <center>
+  <marquee id="marque" width=60% direction="left" height="50px">
+  Open site in desktop mode for better UI
+  </marquee>
+  </center>
+
+<div class="container-fluid"  >
+<div class="row">
+<div class="col-sm-12" >
+<h1>
+  <span style="color:#b3ecff">B</span>
+  <span style="color:#66CC66">i</span>
+  <span style="color:#FF9966">g</span>
+
+  <span style="color:#b3ecff">D</span>
+  <span style="color:#FF0066">r</span>
+  <span style="color:#FF0000">e</span>
+  <span style="color:#66CC66">a</span>
+  <span style="color:#FF9966">m</span>
+  <span style="color:#FFCCCC">s - </span>
+
+  <span style="color:#b3ecff">B</span>
+  <span style="color:#FF0000">i</span>
+  <span style="color:#66CC66">g</span>
+
+  <span style="color:#FF9966">E</span>
+  <span style="color:#FFCCCC">f</span>
+  <span style="color:#FF0066">f</span>
+  <span style="color:#FF9966">o</span>
+  <span style="color:#FF0066">r</span>
+  <span style="color:#FFCCCC">t</span>
+  <span style="color:#FF0066">s</span>
+
+</h1>
+<br><br>
+</div>
+</div>
+</div>
+<div class="col-sm-4" id="Downloads">
+<button type="button" class="btn btn-dark download-button"><i class="fas fa-download"></i>  Downloads</button>
+</div>
+
+
+<center>
+
+<section id="features">
+<div class="row">
+<div class="col-sm-4" >
+<img src="blogs.gif" alt="BLogs-Logo" id="blogs-button" type="submit" style="width:150px";>
+<p>Create blogs</p>
+
+</div>
+<div class="col-sm-4">
+  <img src="news.gif" alt="Logo" id="news-button" type="submit" style="width:150px";>
+  <p>Stay Updated</p>
+</div>
+<div class="col-sm-4">
+<img src="twitter.gif" alt="Logo" id="twitter-button" type="submit" style="width:150px";>
+<p>Just need to click once to see whats happening in world</p>
+</center>
+</div>
+</div>
+</section>
+
+
+<script>
+    $(document).ready(function()
+    {
+      $(".blogs").hide();
+    });
+      $('#blogs-button').click(function()
+    {
+        $(".blogs").toggle("slide");
+    });
+</script>
+
+
+<script>
+    $(document).ready(function()
+    {
+      $("#tweets").hide();
+    });
+      $('#twitter-button').click(function()
+    {
+        $("#tweets").toggle("slide");
+    });
+</script>
+
+
+<script>
+
+    $(document).ready(function()
+    {
+      $("#news").hide();
+    });
+      $('#news-button').click(function()
+    {
+        $("#news").toggle("slide");
+    });
+</script>
+
+
+<div class="blogs"  >
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <h3 scope="col">The 10 best blogging sites and platforms</h3>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <th scope="row"><a class="footer-link" href="https://www.WordPress.org">WordPress</a></th>
+        <td>Best platform for serious bloggers</td>
+      </tr>
+
+      <tr>
+        <th scope="row"><a class="footer-link" href="https://www.Blogger.com">Blogger</a></th>
+        <td>Publishing platform by Google</td>
+      </tr>
+
+      <tr>
+        <th scope="row"><a class="footer-link" href="https://www.Wix.com">Wix</a></th>
+        <td>Best blog website builder for beginners</td>
+      </tr>
+
+      <tr>
+        <th scope="row"><a class="footer-link" href="https://www.Weebly.com">Weebly</a></th>
+        <td>Plain drag and drop builder functions</td>
+      </tr>
+
+      <tr>
+        <th scope="row"><a class="footer-link" href="https://www.Medium.com">Medium</a></th>
+        <td>Simple platform for writing</td>
+      </tr>
+
+      <tr>
+        <th scope="row"><a class="footer-link" href="https://www.Tumblr.com">  Tumblr</a></th>
+        <td> Best microblogging site</td>
+      </tr>
+
+      <tr>
+        <th scope="row"><a class="footer-link" href="https://www.Postach.io">Postach</a></th>
+        <td>Blogging powered by Evernote</td>
+      </tr>
+
+      <tr>
+        <th scope="row"><a class="footer-link" href="https://www.Ghost.org">Ghost</a></th>
+        <td>  Best WordPress alternative</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<div class="col-sm-12" id="tweets">
+<textarea > </textarea>
+</div>
+
+<div class="col-sm-12" id="news">
+<textarea ></textarea>
+</div>
+
+
+<div class="bottom-container">
+<br> <br>
+<div class="Connect">
+<center>Stay Connected</center>
+</div>
+
+
+<center>
+<a class="footer-link" href="https://www.linkedin.com/in/shubham-shegokar-262758107">LinkedIn</a>
+<a class="footer-link" href="https://twitter.com/ShubhamShegoka5">Twitter</a>
+<a class="footer-link" href="https://www.facebook.com/shubham.shegokar.7/">Facebook</a>
+</center>
+
+<br>
+<div class="copyright"> <center>
+© 2021 Shubham Shegokar.</center>
+<br>
+</div>
+</div>
+</body>
+</html>
