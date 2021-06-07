@@ -1,0 +1,97 @@
+.back {
+  background: url(back2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navbar-nav
+{
+  margin-left: auto;
+}
+
+.container-fluid
+{
+padding: 2% 20%;
+}
+
+ .blogs, .news , .twitter,
+{
+  padding: 3% 20%;
+}
+
+#tweets,#news
+{
+  padding: 1% 5%;
+}
+
+#Downloads
+{
+  padding: 3% 20%;
+}
+
+textarea
+{
+  width: 90%;
+  height: 300px;
+}
+
+#features
+{
+  padding: 3% 10%;
+}
+
+
+.twitter,.news
+{
+  background: url(klematis.jpg) repeat;
+}
+
+
+
+
+h1
+{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 3.2rem;
+  line-height: 1.2'
+}
+
+
+p{
+  color: white;
+  font-family: 'Caveat', cursive;
+}
+
+#marque
+{
+  color: white;
+}
+
+a
+{
+color:#00bfff ;
+margin: 15px 20px;
+text-decoration: none;
+font-size: 20px;
+}
+
+
+a :hover
+{
+color:#AFEEEE;
+}
+
+
+h3
+{
+  color: #8b0000;
+  font-family: 'Caveat', cursive;
+}
+
+
+.copyright, .Connect
+{
+  color: gray;
+  padding-bottom: 1%;
+}
